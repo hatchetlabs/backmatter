@@ -54,7 +54,7 @@ description: "A note that discovers it is about letting the room change."
 `references/index.js` is the reference parser. It calls [gray-matter](https://github.com/jonschlinkert/gray-matter) for each block, then combines root keys.
 
 ```js
-const backmatter = require('backmatter');
+const backmatter = require('@hatchetlabs/backmatter');
 
 backmatter('The writing comes first.\n\n---\ntitle: any metadata\n---\n');
 // { data: { title: 'any metadata' }, content: 'The writing comes first.\n\n', backmatter: true }

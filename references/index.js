@@ -101,3 +101,7 @@ function escapeRegExp(value) {
 
 backmatter.stringify = stringify;
 module.exports = backmatter;
+// Assigning the property twice is deliberate. The line above covers CommonJS
+// callers; this one is what cjs-module-lexer detects, so `import { stringify }
+// from '@hatchetlabs/backmatter'` resolves under ESM instead of throwing.
+module.exports.stringify = stringify;

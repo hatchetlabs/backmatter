@@ -61,7 +61,7 @@ A closing fence with no block before it is body text. An empty Frontmatter block
 `references/index.js` is the reference parser for this repo. It calls gray-matter for each block, then combines the root keys.
 
 ```js
-const backmatter = require('backmatter');
+const backmatter = require('@hatchetlabs/backmatter');
 
 backmatter('The writing comes first.\n\n---\ntitle: any metadata\n---\n');
 // { data: { title: 'any metadata' }, content: 'The writing comes first.\n\n', backmatter: true }

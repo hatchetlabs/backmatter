@@ -82,3 +82,15 @@ test('stringify places the block at the end', () => {
   assert.deepEqual(parsed.data, { title: 'any metadata' });
   assert.equal(parsed.content, 'The writing comes first.\n\n');
 });
+
+test('stringify is reachable as a named export', async () => {
+  // cjs-module-lexer only exports what it can see statically, so this fails
+  // unless index.js assigns module.exports.stringify explicitly.
+  const mod = await import('./index.js');
+  assert.equal(typeof mod.default, 'function');
+  assert.equal(typeof mod.stringify, 'function');
+  assert.equal(
+    mod.stringify('Body.\n', { a: 1 }),
+    'Body.\n---\na: 1\n---\n'
+  );
+});

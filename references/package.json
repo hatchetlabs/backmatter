@@ -1,11 +1,41 @@
 {
-  "name": "backmatter",
-  "version": "0.0.4",
+  "name": "@hatchetlabs/backmatter",
+  "version": "1.0.1",
+  "description": "Backmatter, an amendment to Frontmatter. Parse and write a YAML metadata block at the end of a Markdown document, so the body is read first.",
+  "keywords": [
+    "backmatter",
+    "back-matter",
+    "frontmatter",
+    "front-matter",
+    "yaml",
+    "markdown",
+    "metadata",
+    "parser",
+    "gray-matter"
+  ],
   "license": "MIT",
-  "description": "Backmatter, an amendment to Frontmatter, with a reference parser.",
+  "author": "backmatter contributors",
+  "homepage": "https://github.com/hatchetlabs/backmatter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hatchetlabs/backmatter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hatchetlabs/backmatter/issues"
+  },
+  "engines": {
+    "node": ">=14"
+  },
   "main": "index.js",
+  "files": [
+    "index.js",
+    "examples/"
+  ],
   "scripts": {
     "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "gray-matter": "^4.0.3"
