@@ -2,7 +2,7 @@
 
 An amendment to Frontmatter.
 
-> **Spec:** Backmatter is Frontmatter at the tail of the file. Frontmatter is a YAML block between lines of three hyphens at the start of a document. Backmatter is that same block at the end of the file. The block may hold any YAML metadata. A parser reads both blocks and combines their root keys. A root key in both blocks keeps the Frontmatter value whole.
+> **Spec:** Backmatter is Frontmatter at the back of the file. Frontmatter is a YAML block between lines of three hyphens at the start of a document. Backmatter is that same block at the end of the file. The block may hold any YAML metadata. A parser reads both blocks and combines their root keys. A root key in both blocks keeps the Frontmatter value whole.
 
 The body comes first. Read the writing before the metadata.
 

@@ -1,6 +1,6 @@
 {
   "name": "@hatchetlabs/backmatter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Backmatter, an amendment to Frontmatter. Parse and write a YAML metadata block at the end of a Markdown document, so the body is read first.",
   "keywords": [
     "backmatter",
