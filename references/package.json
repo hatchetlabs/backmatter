@@ -1,0 +1,13 @@
+{
+  "name": "backmatter",
+  "version": "0.0.4",
+  "license": "MIT",
+  "description": "Backmatter, an amendment to Frontmatter, with a reference parser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  }
+}
